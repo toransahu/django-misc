@@ -5,6 +5,12 @@
 		<title>Hello</title>
 	</head>
 	<body>
-		Hello World {{a}}
+        <script type="text/javascript">
+            <!--var jsonData = '{{ jd | safe }}';-->
+            <!--var jsonData = JSON.parse('{{ a | safe }}');-->
+            <!--var jsonData = JSON.parse('{{ jd | safe }}');-->
+            var jsonData = JSON.parse('{{jd | safe}}');
+        </script>
+        Hello World '{{a}}'
 	</body>
 </html>
